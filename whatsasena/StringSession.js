@@ -1,9 +1,7 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
+/* Copyright (C) 2021 TENUX-Neotro.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
+NEOTROX - TEENUHX
 */
 
 const fs = require('fs');
@@ -13,7 +11,7 @@ class StringSession {
     }
 
     deCrypt(string = undefined) {
-        if ('ASENA_SESSION' in process.env && string === undefined) {
+        if ('NEUTRO_SESSION' in process.env && string === undefined) {
             string = process.env.STRING_SESSION;
         } else if (string !== undefined) {
             if (fs.existsSync(string)) {
@@ -28,7 +26,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'ASENA;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'NEUTRO;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
