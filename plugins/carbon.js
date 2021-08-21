@@ -1,13 +1,14 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Copyright (C) 2021 TENUX-Neotro.
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+NEOTROX - TEENUHX
 */
 
 const Asena = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-const dd = "Made by WhatsAsena"
+const dd = "*Made by 🎭Neotro-X*"
 
 const Language = require('../language');
 const Lang = Language.getString('log');
